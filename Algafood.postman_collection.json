@@ -36,7 +36,37 @@
 			"response": []
 		},
 		{
-			"name": "Cozinhas Adicionar",
+			"name": "Restaurante - Listar ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/restaurantes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cozinhas - Adicionar",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -105,6 +135,37 @@
 					"port": "8080",
 					"path": [
 						"cozinhas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restaurantes - Buscar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/restaurantes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurantes",
 						"1"
 					]
 				}
