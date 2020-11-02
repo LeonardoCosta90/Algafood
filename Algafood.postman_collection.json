@@ -112,6 +112,37 @@
 			"response": []
 		},
 		{
+			"name": "Cozinhas - Remover",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/cozinhas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cozinhas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Cozinhas - Atualizar",
 			"request": {
 				"method": "PUT",
@@ -124,7 +155,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Tailandesaaaa\"\r\n}",
+					"raw": "{\r\n    \"nome\": \"Tailandesa\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
