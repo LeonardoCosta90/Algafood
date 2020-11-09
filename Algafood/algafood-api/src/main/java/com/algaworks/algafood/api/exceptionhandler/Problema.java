@@ -1,4 +1,4 @@
-package com.algaworks.algafood.api.controller.exceptionhandler;
+package com.algaworks.algafood.api.exceptionhandler;
 
 import java.time.LocalDateTime;
 
@@ -8,7 +8,8 @@ import lombok.Getter;
 @Getter
 @Builder
 public class Problema {
-	
+
 	private LocalDateTime dataHora;
 	private String mensagem;
+	
 }
