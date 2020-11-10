@@ -9,7 +9,7 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   
-  <groupId>com.algaworks</groupId>
+   <groupId>com.algaworks</groupId>
   <artifactId>algafood-api</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>algafood-api</name>
@@ -24,11 +24,16 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-    </dependency>
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-test</artifactId>
+	    <scope>test</scope>
+	</dependency>	 
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-validator</artifactId>
+	    <version>4.3.1.Final</version>
+</dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
@@ -55,13 +60,18 @@
     	<groupId>org.flywaydb</groupId>
     	<artifactId>flyway-core</artifactId>
     </dependency>
-     <dependency>
+    <dependency>
     	<groupId>org.apache.commons</groupId>
     	<artifactId>commons-lang3</artifactId>
     </dependency>
+    <dependency>
+    	<groupId>io.rest-assured</groupId>
+    	<artifactId>rest-assured</artifactId>
+    	<scope>test</scope>
+    </dependency>
   </dependencies>
 
- <build>
+  <build>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
