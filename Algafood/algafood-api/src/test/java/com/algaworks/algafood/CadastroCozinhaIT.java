@@ -1,9 +1,9 @@
 package com.algaworks.algafood;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.Matchers.hasSize;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,13 +21,16 @@ public class CadastroCozinhaIT {
 	@LocalServerPort
 	private int port;
 	
+	@Before
+	public void setUp() {
+		RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+		RestAssured.port = port;
+		RestAssured.basePath = "/cozinhas";
+	}
+	
 	@Test
 	public void deveRetornarStatus200_QuandoConsultarCozinhas() {
-		RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
-		
 		given()
-			.basePath("/cozinhas")
-			.port(port)
 			.accept(ContentType.JSON)
 		.when()
 			.get()
@@ -37,16 +40,11 @@ public class CadastroCozinhaIT {
 
 	@Test
 	public void deveConter4Cozinhas_QuandoConsultarCozinhas() {
-		RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
-		
 		given()
-			.basePath("/cozinhas")
-			.port(port)
 			.accept(ContentType.JSON)
 		.when()
 			.get()
 		.then()
-			.body("", hasSize(4))
-			.body("nome", hasItems("Indiana", "Tailandesa"));
+			.body("", hasSize(4));
 	}
 }
