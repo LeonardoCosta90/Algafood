@@ -9,7 +9,6 @@ import com.algaworks.algafood.domain.model.Usuario;
 @Repository
 public interface UsuarioRepository extends CustomJpaRepository<Usuario, Long> {
 
-
 	Optional<Usuario> findByEmail(String email);
 	
 }

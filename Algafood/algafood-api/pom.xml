@@ -9,7 +9,7 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   
-   <groupId>com.algaworks</groupId>
+  <groupId>com.algaworks</groupId>
   <artifactId>algafood-api</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>algafood-api</name>
@@ -25,16 +25,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-	<dependency>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-starter-test</artifactId>
-	    <scope>test</scope>
-	</dependency>	 
-	<dependency>
-	    <groupId>org.hibernate</groupId>
-	    <artifactId>hibernate-validator</artifactId>
-	    <version>4.3.1.Final</version>
-</dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
@@ -70,7 +65,8 @@
     	<artifactId>rest-assured</artifactId>
     	<scope>test</scope>
     </dependency>
-    <dependency>
+    
+	<dependency>
 		<groupId>org.modelmapper</groupId>
 		<artifactId>modelmapper</artifactId>
 		<version>${modelmapper.version}</version>
