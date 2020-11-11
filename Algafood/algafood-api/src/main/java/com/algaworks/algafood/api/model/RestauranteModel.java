@@ -1,4 +1,3 @@
-  
 package com.algaworks.algafood.api.model;
 
 import java.math.BigDecimal;
