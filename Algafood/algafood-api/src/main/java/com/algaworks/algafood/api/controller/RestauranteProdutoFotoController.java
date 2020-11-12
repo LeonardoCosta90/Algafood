@@ -24,7 +24,7 @@ public class RestauranteProdutoFotoController {
 		var nomeArquivo = UUID.randomUUID().toString() 
 				+ "_" + fotoProdutoInput.getArquivo().getOriginalFilename();
 		
-		var arquivoFoto = Path.of("C:\\Users\\Pichau\\Documents\\img\\catalogo\\", nomeArquivo);
+		var arquivoFoto = Path.of("/Users/thiago/Desktop/catalogo", nomeArquivo);
 		
 		System.out.println(fotoProdutoInput.getDescricao());
 		System.out.println(arquivoFoto);
