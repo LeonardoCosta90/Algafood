@@ -3,6 +3,7 @@ function consultar() {
     url: "http://localhost:8080/formas-pagamento",
     type: "get",
 
+  
     success: function(response) {
       preencherTabela(response);
     }
