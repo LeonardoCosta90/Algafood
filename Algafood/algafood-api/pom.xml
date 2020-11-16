@@ -22,7 +22,6 @@
     <jasperreports.version>6.10.0</jasperreports.version>
     <aws-java-sdk-s3.version>1.11.671</aws-java-sdk-s3.version>
     <springfox.version>2.9.2</springfox.version>
-    <flyway.version>5.2.4</flyway.version>
   </properties>
 
   <dependencies>
@@ -58,10 +57,9 @@
     	<artifactId>lombok</artifactId>
     </dependency>
     <dependency>
-	    <groupId>org.flywaydb</groupId>
-	    <artifactId>flyway-maven-plugin</artifactId>
-	    <version>${flyway.version}</version>
-	</dependency>
+    	<groupId>org.flywaydb</groupId>
+    	<artifactId>flyway-core</artifactId>
+    </dependency>
     <dependency>
     	<groupId>org.apache.commons</groupId>
     	<artifactId>commons-lang3</artifactId>
